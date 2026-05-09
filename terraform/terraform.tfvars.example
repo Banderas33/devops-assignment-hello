@@ -1,0 +1,6 @@
+aws_region   = "eu-west-1"
+project_name = "hello-devops"
+
+# Keep EKS disabled by default to avoid AWS costs.
+# Change to true only when you intentionally want to create EKS.
+enable_eks = false

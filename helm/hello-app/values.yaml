@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: hello-flask-app
+  tag: local
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 5000
+  targetPort: 5000
+  nodePort: 30080
+
+containerPort: 5000
